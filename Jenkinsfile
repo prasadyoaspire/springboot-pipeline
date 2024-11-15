@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-               git branch: 'main',  'https://github.com/prasadyoaspire/springboot-pipeline.git'
+               git branch: 'main', url: 'https://github.com/prasadyoaspire/springboot-pipeline.git'
             }
         }
         stage('Build') {
