@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    
+    environment {
+		mavenHome = tool 'mymaven'
+	}
 
     stages {
         stage('Checkout') {
