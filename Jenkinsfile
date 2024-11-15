@@ -1,9 +1,9 @@
 pipeline {
     agent any
     
-    environment {
-		mavenHome = tool 'mymaven'
-	}
+   tools {
+        maven 'Maven 3.9.9'  // Name of the configured tool
+    }
 
     stages {
         stage('Checkout') {
