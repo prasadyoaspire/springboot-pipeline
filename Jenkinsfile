@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/prasadyoaspire/springjenkingit.git'
+                git 'https://github.com/prasadyoaspire/springboot-pipeline.git'
             }
         }
         stage('Build') {
